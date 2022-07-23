@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" contents="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Polinana</title>
+    <link rel="stylesheet" href="./main.css">
+    <script type="text/javascript" src="main.js">
+    </script>
+</head>
+<body>
+    <nav id="main-menu" class="menu menu-closed">
+        <div class="wrapper menu__content">
+            <svg onclick="сloseMenu()" class="menu__closed-button desktop-hidden" width="23" height="23" viewBox="0 0 23 23"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.68701" width="27.3715" height="3.8" transform="rotate(45 2.68701 0)" />
+                <rect x="0.831299" y="19.5566" width="27.3715" height="3.8" transform="rotate(-45 0.831299 19.5566)"/>
+            </svg>
+            <a data-i18n="1.1" href="#author-info" class="menu__item menu__item_active">
+                Home
+            </a>
+            <a data-i18n="1.2" href="#about-me" class="menu__item">
+                About me
+            </a>
+            <a data-i18n="1.3" href="#skills" class="menu__item">
+                Skills
+            </a>
+            <a data-i18n="1.4" href="#portfolio" class="menu__item">
+                Portfolio
+            </a>
+            <a data-i18n="1.5" href="#contacts" class="menu__item">
+                Contacts
+            </a>
+            <div class="author-info__language desktop-hidden">
+                <div class="language__wrapper">
+                    <span class="language__item" onclick="translateToRu()">
+                        RU
+                    </span>
+                    |
+                    <span class="language__item language__item_active" onclick="translateToEn()">
+                        ENG
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="wrapper">               
+            <div id="author-info" class="author-info">
+                <svg class="desktop-hidden menu__open-button" onclick="openMenu()" width="41" height="28" viewBox="0 0 41 28" fill="black" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" width="33" height="3.83721"/>
+                    <rect x="4" y="7.67383" width="33" height="3.83721"/> 
+                    <rect x="4" y="15.3496" width="33" height="3.83721" />
+                    </svg> 
+                <div class="author-info__logo">
+                    <div data-i18n="2.1">
+                    Denis </div>
+                    <div data-i18n="2.2">
+                    Novik </div>
+                </div>
+                <div class="author-info__description">
+                    <span>
+                        <div data-i18n="2.3">
+                        UX | UI designer</div>
+                        <div data-i18n="2.4">
+                        24 years old, Minsk</div>
+                    </span>
+                </div>
+                <div class="author-info__language mobile-hidden">
+                    <div class="language__wrapper">
+                        <span class="language__item" onclick="translateToRu()">
+                            RU
+                        </span>
+                        |
+                        <span class="language__item language__item_active" onclick="translateToEn()">
+                            ENG
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="author-photo">
+                <img class="mobile-hidden" src="images/author.png">
+                <img class="desktop-hidden" src="images/author-mobile.jpg">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about-me" class="about-me">
+            <div class="wrapper">
+                <h2 class="about-me__title" data-i18n="3.0">About me</h2>
+                <p class="about-me__education">
+                    <div data-i18n="3.1">
+                    Hi, I'm Denis – UX/UI designer from Minsk.</div>
+                    <div data-i18n="3.2">
+                    I'm interested in design and everything connected with it.</div>
+                </p>
+                <p class="about-me__education">
+                    <div data-i18n="3.3">
+                    I'm studying at courses "Web and mobile design</div>
+                    <div data-i18n="3.4">
+                    interfaces" in IT-Academy.</div>
+                </p>
+                <p class="about-me__education">
+                    <div data-i18n="3.5">
+                    Ready to implement excellent projects</div>
+                    <div data-i18n="3.6">
+                    with wonderful people.</div>
+                </p>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <div class="wrapper">
+                <h2 class="skills__title" data-i18n="4.0">Skills</h2>
+                <p class="skills__text" data-i18n="4.1">I work in such program as</p>
+                <div class="skills__instruments">
+                    <div class="instruments__item">
+                        <img class="item__logo" src="images/Ps.svg" />
+                        <p>Adobe<br>Photoshop</p>
+                        <img class="item__stars" src="images/Stars41.svg" />
+                    </div>
+                    <div class="instruments__item">
+                        <img class="item__logo" src="images/Ai.svg" />
+                        <p>Adobe<br>illustrator</p>
+                        <img class="item__stars" src="images/Stars32.svg" />
+                    </div>
+                    <div class="instruments__item">
+                        <img class="item__logo" src="images/Ae.svg" />
+                        <p>Adobe<br>After Effects</p>
+                        <img class="item__stars" src="images/Stars41.svg" />
+                    </div>
+                    <div class="instruments__item">
+                        <img class="item__logo" src="images/F.svg" />
+                        <p>Figma</p>
+                        <img class="item__stars" src="images/Stars41.svg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <div class="wrapper">
+                <h2 class="portfolio__title" class="portfolio__description" data-i18n="5.0">Portfolio</h2>
+                <img class="portfolio__images" src="images/Слой 8.jpg"></img>
+                <a href="https://www.online-fashion.ru/" class="portfolio__description">Online fashion store -
+                    Homepage</a>
+                <img class="portfolio__images" src="images/reebok_web.jpg"></img>
+                <a href="https://www.reebok.ru/" class="portfolio__description">Reebok Store - Concept</a>
+                <img class="portfolio__images" src="images/braun.jpg"></img>
+                <a href="https://braun-russia.ru/" class="portfolio__description">Braun Landing Page - Concept</a>
+            </div>
+        </section>
+    </main>
+    <footer id="contacts">
+        <div class="wrapper">
+            <h2 class="footer__title" data-i18n="6.0">Contacts</h2>
+            <p class="footer__subtitle">
+                <div data-i18n="6.1">
+                Want to know more or just chat?</div>
+                <div data-i18n="6.2">
+                You are welcome!</div></p>
+            <form  name="sendMessage" method="post" action="/success.html">
+                <ul>
+                  <li>
+                    <label for="name" data-i18n="6.3">Name:</label>
+                    <input type="text" id="name" name="user_name">
+                  </li>
+                  <li>
+                    <label for="mail" data-i18n="6.4">E-mail:</label>
+                    <input type="email" id="mail" name="user_mail">
+                  </li>
+                  <li>
+                    <label for="msg" data-i18n="6.5">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                  </li>
+                  <li class="button">
+                    <button type="submit" data-i18n="6.6">Send your message</button>
+                  </li>
+                </ul>
+              </form>
+            <div class="social-container">
+                <div class="social-container__item">
+                    <a href="https://www.online-fashion.ru/">
+                        <svg width="50px" height="50px" viewBox="0 0 50 50" stroke="none" stroke-width="1"
+                            fill-rule="evenodd" fill="#000000">
+                            <path
+                                d="M25,50 C38.8071194,50 50,38.8071194 50,25 C50,11.1928806 38.8071194,0 25,0 C11.1928806,0 0,11.1928806 0,25 C0,38.8071194 11.1928806,50 25,50 Z M25,47 C37.1502651,47 47,37.1502651 47,25 C47,12.8497349 37.1502651,3 25,3 C12.8497349,3 3,12.8497349 3,25 C3,37.1502651 12.8497349,47 25,47 Z M14,20.1180479 L14,34.6581834 L18.7100851,34.6581834 L18.7100851,20.1180479 L14,20.1180479 Z M16.6646962,13 C15.0534058,13 14,14.0858611 14,15.5115122 C14,16.9076331 15.0222711,18.0247614 16.6035556,18.0247614 L16.6336556,18.0247614 C18.2759867,18.0247614 19.2988222,16.9076331 19.2988222,15.5115122 C19.2682519,14.0858611 18.2759867,13 16.6646962,13 Z M30.5769213,20.1180479 C28.076176,20.1180479 26.9565501,21.5293199 26.3314108,22.5193527 L26.3314108,20.4598644 L21.6207614,20.4598644 C21.6828427,21.8242356 21.6207614,35 21.6207614,35 L26.3314108,35 L26.3314108,26.8795887 C26.3314108,26.445032 26.3619812,26.0115368 26.4865199,25.7004084 C26.826932,24.83226 27.6020069,23.9334233 28.9032674,23.9334233 C30.6083381,23.9334233 31.2899149,25.2667202 31.2899149,27.2206333 L31.2899149,34.999614 L35.9998119,34.999614 L36,26.6627446 C36,22.1966439 33.6763743,20.1180479 30.5769213,20.1180479 Z M30.5769213,20.1180479">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="social-container__item">
+                    <a href="https://www.instagram.com/">
+                        <svg width="50px" height="50px" viewBox="0 0 50 50" stroke="none" stroke-width="1"
+                            fill="#000000" fill-rule="evenodd">
+                            <path
+                                d="M25,0 C11.1928806,0 0,11.1928806 0,25 C0,38.8071194 11.1928806,50 25,50 C38.8071194,50 50,38.8071194 50,25 C50,11.1928806 38.8071194,0 25,0 Z M25,3 C12.8497349,3 3,12.8497349 3,25 C3,37.1502651 12.8497349,47 25,47 C37.1502651,47 47,37.1502651 47,25 C47,12.8497349 37.1502651,3 25,3 Z M35.9513128,34.5096659 C35.9701595,34.4075385 35.9839804,34.3037693 36,34.2013135 L36,15.7986865 C35.9846086,15.6978726 35.9714159,15.5967304 35.9525693,15.496245 C35.7600194,14.4654483 34.9467868,13.6655054 33.9482288,13.5226585 C33.9067662,13.517076 33.8662459,13.5075528 33.8254116,13.5 L16.1745884,13.5 C16.0681049,13.5200314 15.9609932,13.5351371 15.8560802,13.5600942 C14.8813947,13.7922616 14.1601965,14.6128926 14.0213595,15.6453312 C14.0157055,15.6883495 14.0072245,15.7310394 14,15.7740577 L14,34.2269275 C14.0201031,34.3438321 14.0361227,34.4617219 14.0612516,34.5779697 C14.2767315,35.5742861 15.0902783,36.3466448 16.0580534,36.4766848 C16.1048559,36.4825957 16.1519725,36.4921188 16.198775,36.5 L33.801225,36.5 C33.9155613,36.4796402 34.0302117,36.4628926 34.1432916,36.4372787 C35.0416482,36.2379497 35.775725,35.454426 35.9513128,34.5096659 Z M16.380331,33.0989292 C16.380331,33.5885494 16.7858479,34.0095374 17.254187,34.0095374 C22.4169106,34.0098658 27.5793201,34.0098658 32.7420437,34.0095374 C33.2147803,34.0095374 33.6180985,33.5892062 33.6180985,33.0959737 C33.6184126,29.6962164 33.6180985,26.2967875 33.6180985,22.8973587 L33.6180985,22.8267561 L31.5179543,22.8267561 C31.8144748,23.81749 31.9055669,24.8252998 31.7893459,25.8524843 C31.6724968,26.8799971 31.3558732,27.8362507 30.8401034,28.7192747 C30.3240195,29.6032838 29.6549637,30.3355797 28.8357629,30.9184609 C26.7123745,32.4303398 23.9167892,32.5633352 21.6636731,31.2412621 C20.5247077,30.5736579 19.6304345,29.6426899 19.0069247,28.4431039 C18.0768429,26.653084 17.9282685,24.7744003 18.4738788,22.8251142 C17.7771813,22.825771 17.0833107,22.825771 16.3800168,22.825771 L16.3800168,22.8878355 C16.3800168,26.2915334 16.3797027,29.6952313 16.380331,33.0989292 Z M24.897757,29.6581239 C27.3886549,29.7139492 29.403361,27.6333095 29.4558175,25.1027841 C29.5095304,22.4931182 27.4960808,20.3376071 25.0001571,20.339249 C22.5601451,20.3376071 20.5765359,22.3900057 20.5422979,24.9293975 C20.5071175,27.5370931 22.5039192,29.604269 24.897757,29.6581239 Z M33.6177844,18.481582 C33.6180985,17.7555254 33.6180985,17.0291405 33.6177844,16.303084 C33.6177844,15.7822673 33.2235754,15.3678469 32.7260241,15.3675186 C32.03341,15.3671902 31.3407958,15.3668618 30.6478676,15.3675186 C30.1515727,15.3681753 29.7561073,15.7835808 29.7557932,16.3043975 C29.7554791,17.0242147 29.7535944,17.744032 29.7583061,18.4641776 C29.7589343,18.5715591 29.7784092,18.6832096 29.8110767,18.7850086 C29.9354645,19.1682324 30.2712489,19.4033552 30.6824198,19.4053255 C31.0166336,19.4059823 31.3508474,19.4049971 31.6853753,19.4049971 C32.0472308,19.4007282 32.4103428,19.4079526 32.7725125,19.3987579 C33.2383386,19.3866077 33.6177844,18.9692319 33.6177844,18.481582 Z M33.6177844,18.481582">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="social-container__item">
+                    <a href="https://www.online-fashion.ru/">
+                        <svg enable-background="new 0 0 144.083 144" height="50px" viewBox="0 0 135 130" width="50px" stroke="none" stroke-width="1" fill-rule="evenodd" fill="#000000">
+                            <path
+                                d="M72.04,11.166c-33.543,0-60.833,27.29-60.833,60.834s27.29,60.834,60.833,60.834c33.544,0,60.835-27.29,60.835-60.834  S105.584,11.166,72.04,11.166z M72.04,126.834c-30.235,0-54.833-24.599-54.833-54.834S41.805,17.166,72.04,17.166  c30.237,0,54.835,24.599,54.835,54.834S102.277,126.834,72.04,126.834z" />
+                            <path
+                                d="M65.31,70.642c1.871-0.847,3.354-2.117,4.447-3.812c1.093-1.694,1.64-3.557,1.64-5.586c0-1.871-0.443-3.561-1.329-5.067  c-0.887-1.507-1.996-2.714-3.325-3.62c-1.33-0.906-2.837-1.501-4.521-1.787c-1.684-0.286-4.239-0.429-7.668-0.429H37.236v43.321  h14.745c5.575-0.041,9.092-0.139,10.55-0.297c2.324-0.256,4.28-0.941,5.865-2.053c1.587-1.113,2.838-2.602,3.754-4.463  c0.916-1.861,1.373-3.777,1.373-5.748c0-2.502-0.709-4.678-2.127-6.531C69.979,72.721,67.948,71.41,65.31,70.642z M45.982,57.551  h5.024c4.117,0,6.609,0.049,7.477,0.147c1.457,0.178,2.556,0.686,3.294,1.521c0.739,0.839,1.108,1.927,1.108,3.266  c0,1.399-0.428,2.527-1.285,3.384c-0.857,0.857-2.034,1.374-3.531,1.552c-0.827,0.099-2.945,0.147-6.354,0.147h-5.733V57.551z   M63.256,84.367c-0.818,0.916-1.877,1.492-3.177,1.729c-0.848,0.178-2.848,0.266-5.999,0.266h-8.098V74.779h7.063  c3.979,0,6.564,0.205,7.757,0.619c1.191,0.414,2.103,1.074,2.733,1.98c0.63,0.906,0.945,2.01,0.945,3.311  C64.481,82.225,64.073,83.451,63.256,84.367z" />
+                            <path
+                                d="M102.27,65.191c-2.838-3.082-6.709-4.624-11.617-4.624c-4.369,0-7.982,1.473-10.84,4.418s-4.285,7.017-4.285,12.218  c0,4.354,1.086,7.959,3.262,10.816c2.752,3.566,6.998,5.348,12.732,5.348c3.625,0,6.643-0.793,9.055-2.379  c2.412-1.584,5.5-4.861,5.559-7.762l-8.959,0.053c-0.477,1.576-1.182,2.109-2.111,2.818c-0.934,0.709-2.082,1.064-3.449,1.064  c-2.008,0-3.686-0.684-5.031-2.053c-1.346-1.371-2.049-3.287-2.111-5.748h21.865C106.461,72.998,105.106,68.275,102.27,65.191z   M84.627,74.277c-0.021-2.264,0.59-4.057,1.832-5.377c1.242-1.319,2.816-1.979,4.723-1.979c1.779,0,3.291,0.625,4.533,1.876  s1.895,3.078,1.957,5.48H84.627z" />
+                            <path />
+                        </svg>
+                    </a>
+                </div>
+                <div class="social-container__item">
+                    <a href="https://www.online-fashion.ru/">
+                        <svg width="50" height="50" viewBox="0 0 40 41"  fill="#000000" stroke="none" stroke-width="1">
+                            <path d="M30.6636 7.90189L30.9693 7.51765L30.5907 7.20501C27.6753 4.79787 23.9726 3.35998 19.9218 3.35998C18.5026 3.35998 17.1267 3.55879 15.8239 3.8845L15.0968 4.06629L15.5439 4.66785C16.9345 6.53872 18.9322 9.36428 21.3246 13.7896L21.5312 14.1718L21.9385 14.0205C26.4658 12.3395 29.1786 9.76804 30.6636 7.90189ZM13.3633 5.14412L13.1183 4.82133L12.7517 4.99422C8.2556 7.11505 4.84923 11.1659 3.50458 16.1128L3.3385 16.7238L3.97134 16.7437C6.44724 16.8217 12.3654 16.705 18.9231 14.9482L19.5416 14.7825L19.2309 14.2226C16.6875 9.63894 14.5485 6.7054 13.3633 5.14412ZM32.8171 9.4031L32.4294 8.94246L32.0478 9.40819C30.3918 11.4294 27.5165 14.0547 22.9642 15.8361L22.4579 16.0342L22.6976 16.5221C23.6791 18.5203 24.6313 20.6496 25.4989 22.949L25.6418 23.3279L26.0421 23.2668C29.3354 22.7639 32.3796 22.7639 34.679 22.944C35.2381 22.9904 35.5988 23.0425 36.0187 23.1031C36.1072 23.1159 36.1982 23.1291 36.2943 23.1426L36.8064 23.2149L36.8614 22.7007C36.9288 22.0701 36.9676 21.4368 36.9676 20.7822C36.9676 16.4287 35.3902 12.4602 32.8171 9.4031ZM20.6701 17.0304L20.485 16.6592L20.086 16.7726C12.3727 18.9639 5.57803 18.897 3.46198 18.8116L2.98015 18.7921L2.94327 19.2729L2.94069 19.3066C2.90413 19.7831 2.8666 20.2721 2.8666 20.7918C2.8666 26.0256 5.13097 30.6976 8.70191 33.8945L9.07471 34.2283L9.40819 33.8552C10.3033 32.8539 11.5039 31.5786 12.9635 30.2474L12.9655 30.2456C15.7118 27.7139 19.2452 25.0351 23.0942 23.8663L23.6111 23.7093L23.4147 23.2061C22.5532 20.9984 21.6256 18.9462 20.6701 17.0304ZM30.1596 24.9266L30.1542 24.9268C29.1431 24.9756 28.0668 25.0731 26.9723 25.2191L26.3775 25.2984L26.5628 25.8692C27.4866 28.713 28.2507 31.7255 28.7443 34.8593L28.8686 35.6482L29.5239 35.1919C32.71 32.9733 35.12 29.6763 36.2427 25.8059L36.408 25.2363L35.8186 25.1698C34.3586 25.0049 32.5073 24.8387 30.1596 24.9266ZM24.5036 26.1119L24.35 25.6585L23.8904 25.7922C20.509 26.7761 16.9721 29.3273 14.2917 31.7876C12.9965 32.9662 11.9505 34.085 11.111 35.0015L10.6983 35.452L11.2216 35.7674C13.7671 37.3018 16.723 38.2045 19.9124 38.2045C22.306 38.2045 24.5638 37.6988 26.6257 36.8078L26.9737 36.6573L26.9228 36.2816C26.4385 32.7078 25.5843 29.3017 24.5036 26.1119ZM0.867676 20.7822C0.867676 10.029 9.43492 1.2832 19.9218 1.2832C30.4087 1.2832 38.9759 10.029 38.9759 20.7822C38.9759 31.5354 30.4087 40.2812 19.9218 40.2812C9.43492 40.2812 0.867676 31.5354 0.867676 20.7822Z" />
+                            </svg>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__ps">Like me on<br>LinkedIn, Instagram, Behance, Dribble</p>
+        </div>
+    </footer>
+    <script>
+      function openMenu() {
+        document.getElementById("main-menu").classList.remove("menu-closed");
+      }
+      function сloseMenu() {
+        document.getElementById("main-menu").classList.add("menu-closed")  
+      }
+      function translateToEn() {
+        fetch("./i18n/en.json")
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(jsonResponse) {
+            //1-получить список всех элементов, у которых есть атрибут data-i18n
+          let elems = document.querySelectorAll("[data-i18n]")
+            //2-пройтись по всем этим элементм в цикле
+          for (let i = 0; i < elems.length; i++) {
+              let elem = elems[i] //находим элемент который переведем из списка
+              let atributI18nOfThisElem = elem.getAttribute("data-i18n") //определяем чему равен атрибут data-i18n у выбранного элемента
+            //3-для каждого зменить текст на текст взятый из json файл с переводами*/
+              console.log(atributI18nOfThisElem) 
+              let neededTranslationNomber = atributI18nOfThisElem
+              let translation = jsonResponse[neededTranslationNomber]
+              elem.textContent = translation
+          }
+        });
+      }
+      function translateToRu() {
+        fetch("./i18n/ru.json")
+        .then(function(response) { //переделываем текст в объект js
+            return response.json(); 
+        })
+        .then(function(jsonResponse) {  //готовый объект в jsonResponse
+          let elems=document.querySelectorAll("[data-i18n]")
+          for (let i = 0; i < elems.length; i++) {
+              let elem = elems[i]
+              let atributI18nOfThisElem = elem.getAttribute("data-i18n") //определяем чему равен атрибут data-i18n у выбранного элемента
+            //3-для каждого зменить текст на текст взятый из json файл с переводами*/
+              console.log(atributI18nOfThisElem) 
+              let neededTranslationNomber = atributI18nOfThisElem
+              let translation = jsonResponse[neededTranslationNomber]
+              elem.textContent = translation
+          }
+        });
+      }
+    </script>
+</body>
