@@ -1,0 +1,454 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("./fonts/gilroy-medium.woff2") format("woff2"),
+         url("./fonts/gilroy-medium.ttf") format("ttf"),
+         url("./fonts/gilroy-medium.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("./fonts/gilroy-bold.woff2") format("woff2"),
+         url("./fonts/gilroy-bold.ttf") format("ttf"),
+         url("./fonts/gilroy-bold.woff") format("woff");
+    font-weight: bold;
+
+}
+body {
+    font-family: "Gilroy", sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  /*  border: 1px solid blueviolet;*/
+    min-height: 100vh;
+    margin: 0;
+    font-size: 18px;
+}
+
+header, main, footer {
+    width: 100%;
+}
+
+header, section, footer {
+   /* border: 1px solid black;*/
+    display: flex;
+    justify-content: center;
+    
+}
+ 
+main {
+    /*border: 1px solid blue;*/
+    flex-grow: 1; 
+}    
+
+footer {
+    /*border: 1px solid green; */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    color: #828282;
+    border-bottom: 1px solid #828282;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.menu__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu__item {
+  /*  border: 1px solid palevioletred;*/
+    text-decoration: none;
+    color: #828282;
+    transition: color 0.2s;
+
+}
+.menu__item:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    color: black;
+    border-top: 1px solid #828282:
+}
+
+.language__item {
+    color: #828282;
+    transition: color 0.2s;   
+}
+
+.language__item:hover {
+    color: black;
+    cursor: pointer;  
+}
+
+.author-info__logo {
+    font-size: 47px;
+    margin-top: 40px;
+  /*  border: 1px solid red;*/
+    margin-bottom: -10px; 
+    font-weight: bold;
+ 
+}
+
+.author-info__description {
+  /*  border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.author-info__description span {
+    vertical-align: bottom;
+}
+.author-info__language {
+   /* border: 1px solid red; */
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    font-weight: bold;
+
+}
+.language__wrapper {
+  /*  border: 1px solid red; */
+    transform: translateX(100%) rotate(-90deg);
+    transform-origin: left bottom;
+
+}
+
+
+.menu__item_active {
+    color: black;
+}
+
+.language__item_active {
+    color: black;   
+}
+
+.author-photo {
+    margin-top: 50px;
+    margin-bottom: 105px;
+}
+
+.author-photo img {
+    max-width: 100%;
+}
+
+.about-me {
+  /*  border: solid black; */
+    text-align: center;
+    background-color: #F6F6F6 ;
+    padding-top: 30px;
+    
+    
+}
+
+h2 {
+    font-size: 34px;
+    margin-top: 90px;
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 100%;
+    
+}
+
+.wrapper {
+  /*  border: solid yellow;*/
+    max-width: 940px;
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.about-me__education:nth-of-type(1) {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.about-me__education:nth-of-type(2) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about-me__education:nth-of-type(3) {
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.skills__instruments {
+  /*  border: 1px solid orange;*/
+    padding-bottom: 110px;
+}
+
+.instruments__item {
+  /*  border: 1px solid blue;*/
+    display: flex;
+    flex-direction: column;
+}
+.item__stars{
+    margin-top: auto;
+    max-height: 26px;
+}
+
+.skills {
+    text-align: center;
+}
+
+.skills__instruments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 85px;    
+}
+
+.item__logo {
+    max-height: 90px;
+}
+
+.instruments__item p{
+   font-size: 14px; 
+   font-weight: bold;
+   margin-top: 20px;
+   margin-bottom: 40px;
+   color: #828282;
+}
+
+.skills__text {
+    margin-top: 65px;
+}
+
+.portfolio {
+    text-align: center;
+   /* border: solid black;*/
+    background-color: #F6F6F6 ;
+    padding-bottom: 100px;
+    
+}
+
+.portfolio__images {
+    max-width: 100%;
+}
+
+.portfolio__description {
+    margin-top: 45px;
+    /*border: solid black;*/
+    margin-bottom: 100px;
+    color: black;
+    display: block;
+}
+
+footer {
+    text-align: center;
+}
+
+.social-container {
+ /*   border: 1px solid blue;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 85px;
+}
+.social-container__item {
+    padding-right: 30px;
+    padding-left: 30px;
+    cursor: pointer;
+   
+}
+
+.social-container__item svg {
+    fill: #828282;
+    transition: fill 0.2s;
+}
+
+.social-container__item svg:hover {
+    fill:black;
+}
+
+.footer__button {
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    padding-left: 28px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 28px;
+    font-size: 18px;
+    border: none;
+    font-family: "Gilroy";
+    cursor: pointer; 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+  
+.footer__button:hover {
+    background-color: white;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+    color: black;
+  }
+
+.footer__ps {
+    font-size: 14px;
+    color: #828282;
+    margin-top: 45px;
+    margin-bottom: 125px;
+}
+
+.footer__subtitle {
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.desktop-hidden {
+    display:none ;
+}
+
+@media (max-width: 600px) {
+   .wrapper {
+       margin-left: 20px;
+       margin-right: 20px;
+   }
+   .author-info {
+       flex-direction: column; 
+   }
+   .author-info__logo {
+       margin-bottom: 20px;
+   }
+   .mobile-hidden {
+       display: none;
+   }
+   .desktop-hidden {
+       display:block ;
+   }
+   .skills__instruments {
+       flex-direction: column;
+   }
+   .footer__button {
+       width: 100%;
+
+   }
+   .social-container {
+       justify-content: space-between;
+       margin-left: -5px;
+       margin-right: -5px;
+   }
+   .social-container__item {
+       padding-left: 5px;
+       padding-right: 5px;
+   }
+   .menu__content {
+       flex-direction: column;
+       font-size: 34px;
+       position: relative;
+   }
+   .menu__item {
+       margin-bottom: 65px;
+   }
+   .menu__closed-button {
+       position: absolute;
+       right: 10px;
+       top: 15px;
+       cursor: pointer;
+       fill: #828282;
+       transition: fill 0.2s;
+   }
+   .menu__closed-button:hover {
+       fill:black;
+   }
+   .menu-closed {
+       display: none;
+   }
+   .menu__open-button {
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 45px;
+      cursor: pointer;
+      fill: #828282;
+      transition: fill 0.2s;
+   }
+   .menu__open-button:hover {
+      fill:black; 
+   }
+}
+  form {
+    /* Расположим форму по центру страницы */
+    margin: 0 auto;
+    width: 400px;
+    /* Определим контур формы */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Определим размер и выравнивание */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* Убедимся, что все поля имеют одинаковые настройки шрифта
+       По умолчанию в textarea используется моноширинный шрифт */
+    font: 1em sans-serif;
+  
+    /* Определим размер полей */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Стилизуем границы полей */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Дополнительная подсветка для элементов в фокусе */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Выравним многострочные текстовые поля с их текстами-подсказками */
+    vertical-align: top;
+  
+    /* Предоставим пространство для ввода текста */
+    height: 5em;
+  }
+  
+  .button {
+    /* Выравним кнопки с их текстами-подсказками */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* Этот дополнительный внешний отступ примерно равен расстоянию
+       между текстами-подсказками и текстовыми полями */
+    margin-left: .5em;
+  }
